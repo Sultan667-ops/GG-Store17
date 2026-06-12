@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GG Sport17 - Sport Health Support</title>
+<meta name="description" content="Toko perlengkapan kesehatan olahraga terpercaya. Kinesiology tape, rigid tape, wristape & aksesori sport premium.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo" onclick="goHome()">
+    <div class="logo-hex">
+      <svg viewBox="0 0 40 40"><polygon points="20,2 36,11 36,29 20,38 4,29 4,11" fill="#6B0000" stroke="#c00" stroke-width="1.5"/><polygon points="20,9 31,15 31,25 20,31 9,25 9,15" fill="#8B0000"/><text x="20" y="24" text-anchor="middle" fill="white" font-size="11" font-weight="900" font-family="Arial">GG</text></svg>
+    </div>
+    <span class="logo-name">GG_<span>Sport17</span></span>
+  </div>
+  <div class="nav-links">
+    <a onclick="goHome()">Beranda</a>
+    <a onclick="showCatalog()">Produk</a>
+    <a onclick="scrollFeat()">Tentang</a>
+  </div>
+  <div class="nav-r">
+    <div class="srch">
+      <span style="font-size:13px;color:rgba(255,255,255,.5)">🔍</span>
+      <input id="nav-srch" placeholder="Cari produk..." oninput="doSearch(this.value)" onfocus="showCatalog()">
+    </div>
+    <button class="cart-btn" onclick="showPage('page-cart')">🛒 <span class="cbadge" id="cc">0</span></button>
+  </div>
+</nav>
+
+<!-- HOME -->
+<div id="page-home" class="page on">
+  <section class="hero">
+    <div class="hero-l">
+      <div class="h-badge">🏆 SPORT HEALTH SUPPORT</div>
+      <h1>Perlengkapan <em>Taping Sport</em><br>Terbaik & Terpercaya</h1>
+      <p>Kinesiology tape, rigid tape, wristape, foamwrap & aksesori sport premium. Dukung performa & recovery lebih cepat!</p>
+      <div class="hbtns">
+        <button class="bp" onclick="showCatalog()">Belanja Sekarang</button>
+        <button class="bs" onclick="openWA('Halo GG Sport17! Saya ingin tanya info produk')">Chat WhatsApp</button>
+      </div>
+      <div class="hstats">
+        <div class="hst"><div class="n">1200+</div><div class="l">Terjual</div></div>
+        <div class="hst"><div class="n">4.9★</div><div class="l">Rating</div></div>
+        <div class="hst"><div class="n">201</div><div class="l">Pengikut</div></div>
+        <div class="hst"><div class="n">100%</div><div class="l">Original</div></div>
+      </div>
+    </div>
+    <div class="hero-r">
+      <div class="hero-logo">
+        <svg viewBox="0 0 160 160"><polygon points="80,8 148,46 148,114 80,152 12,114 12,46" fill="#6B0000" stroke="#c00" stroke-width="3"/><polygon points="80,18 138,52 138,108 80,142 22,108 22,52" fill="#8B0000"/><text x="80" y="78" text-anchor="middle" fill="white" font-size="38" font-weight="900" font-family="Arial">GG</text><text x="80" y="108" text-anchor="middle" fill="#ff6b35" font-size="13" font-weight="700" font-family="Arial">SPORT</text></svg>
+      </div>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="sec-hd"><h2 class="sec-title">Kategori <em>Produk</em></h2><button class="see-all" onclick="showCatalog()">Lihat Semua →</button></div>
+    <div class="cat-grid" id="cat-home"></div>
+  </section>
+  <section class="sec sec-bg">
+    <div class="sec-hd"><h2 class="sec-title">Produk <em>Terlaris</em></h2><button class="see-all" onclick="showCatalog()">Lihat Semua →</button></div>
+    <div class="pg" id="grid-home"></div>
+  </section>
+  <div class="banner-w">
+    <div class="promo">
+      <div><h2>🔥 Cicilan 0% untuk semua produk!</h2><p>Bayar mulai Rp7.900 · Pengiriman seluruh Indonesia · 100% Original</p></div>
+      <button class="promo-btn" onclick="openWA('Halo, saya mau tanya promo cicilan 0%')">Tanya Sekarang</button>
+    </div>
+  </div>
+  <section class="sec" id="feat-sec">
+    <div class="sec-hd"><h2 class="sec-title">Mengapa <em>GG Sport17?</em></h2></div>
+    <div class="feat-grid">
+      <div class="fc"><div class="fic">🏅</div><div class="ft">100% Original</div><div class="fd">Semua produk original & bergaransi</div></div>
+      <div class="fc"><div class="fic">🚚</div><div class="ft">Pengiriman Cepat</div><div class="fd">Kirim ke seluruh Indonesia</div></div>
+      <div class="fc"><div class="fic">💳</div><div class="ft">Cicilan 0%</div><div class="fd">Cicil tanpa bunga berbagai metode</div></div>
+      <div class="fc"><div class="fic">⭐</div><div class="ft">Rating 4.9</div><div class="fd">Dipercaya ribuan pelanggan</div></div>
+    </div>
+  </section>
+  <footer>
+    <div class="fg">
+      <div class="fb"><span class="logo-name" style="font-size:16px">GG_<span>Sport17</span></span><p>Toko sport health support terpercaya. Kinesiology tape, rigid tape & aksesori olahraga premium.</p></div>
+      <div><div class="fh">Produk</div><ul class="fl"><li><a>Kinesiology Tape</a></li><li><a>Rigid Tape</a></li><li><a>Wristape</a></li><li><a>Foamwrap</a></li><li><a>Paket Hemat</a></li></ul></div>
+      <div><div class="fh">Kategori</div><ul class="fl"><li><a>Tinju & Bela Diri</a></li><li><a>Sepak Bola</a></li><li><a>Bulu Tangkis</a></li><li><a>P3K</a></li></ul></div>
+      <div><div class="fh">Kontak</div><ul class="fl"><li><a>WhatsApp: +62 859-2145-6628</a></li><li><a>Shopee: Gg-Sport17</a></li></ul></div>
+    </div>
+    <div class="fbot"><span>© 2026 GG_Sport17. All rights reserved.</span><span>Sport Health Support 💪</span></div>
+  </footer>
+</div>
+
+<!-- CATALOG -->
+<div id="page-catalog" class="page">
+  <div class="cat-filter-bar">
+    <div class="srch-bar-full"><span style="font-size:15px;color:#aaa">🔍</span><input id="cat-srch" placeholder="Cari produk GG Sport17..." oninput="doSearch(this.value)"></div>
+    <div class="filt-pills" id="filt-pills"></div>
+  </div>
+  <div class="cat-content">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px"><span style="font-size:12px;color:#888" id="prod-count"></span></div>
+    <div class="pg" id="grid-catalog"></div>
+    <div class="no-res" id="no-res" style="display:none"><div style="font-size:36px;margin-bottom:10px">😕</div><div style="font-size:14px;font-weight:700">Produk tidak ditemukan</div></div>
+  </div>
+</div>
+
+<!-- DETAIL -->
+<div id="page-detail" class="page">
+  <div class="det-back" onclick="showPage('page-catalog')">← Kembali ke Produk</div>
+  <div class="det-body" id="det-body"></div>
+  <div class="reviews-sec" id="reviews-sec"></div>
+</div>
+
+<!-- CART -->
+<div id="page-cart" class="page">
+  <div class="cart-hd">🛒 Keranjang & Checkout <span id="cart-hd-c" style="color:var(--or);font-size:13px"></span></div>
+  <div class="cart-lay">
+    <div><div class="cart-sec"><h3>Produk Dipesan</h3><div id="cart-list"></div></div></div>
+    <div>
+      <div class="ord-sum">
+        <h3>Ringkasan Pesanan</h3>
+        <div class="sum-r"><span>Subtotal</span><span id="s-sub">Rp 0</span></div>
+        <div class="sum-r"><span>Ongkir</span><span style="color:green;font-weight:700">Gratis</span></div>
+        <div class="sum-r tot"><span>Total</span><span id="s-tot">Rp 0</span></div>
+      </div>
+      <div class="form-sec">
+        <h3>📦 Data Pengiriman</h3>
+        <div class="fg2"><label>Nama Lengkap</label><input id="f-name" placeholder="Nama penerima"></div>
+        <div class="fg2"><label>Nomor WhatsApp</label><input id="f-phone" placeholder="08xxxxxxxxxx"></div>
+        <div class="fg2"><label>Alamat Lengkap</label><textarea id="f-addr" placeholder="Jalan, RT/RW, Kelurahan..."></textarea></div>
+        <div class="fg2"><label>Kota / Kabupaten</label><input id="f-city" placeholder="Jakarta, Surabaya..."></div>
+      </div>
+      <div class="form-sec" style="margin-top:12px">
+        <h3>💳 Metode Pembayaran</h3>
+        <div class="pay-g" id="pay-g">
+          <div class="po on" onclick="selPay(this,'Transfer Bank')"><div>🏦</div><span>Transfer Bank</span></div>
+          <div class="po" onclick="selPay(this,'QRIS')"><div>📲</div><span>QRIS</span></div>
+          <div class="po" onclick="selPay(this,'COD')"><div>🚪</div><span>COD</span></div>
+          <div class="po" onclick="selPay(this,'Cicilan 0%')"><div>💳</div><span>Cicilan 0%</span></div>
+        </div>
+        <button class="co-btn" onclick="doCheckout()">✅ Konfirmasi Pesanan</button>
+        <button class="wa-co" onclick="doWACO()">💬 Checkout via WhatsApp</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<div class="suc-modal" id="suc-modal"><div class="suc-box"><div class="suc-icon">🎉</div><h2>Pesanan Berhasil!</h2><p id="suc-msg"></p><button onclick="closeSuc()">Lanjut Belanja</button></div></div>
+<button class="wa-float" onclick="openWA('Halo GG Sport17! Saya mau tanya produk 👋')">💬</button>
+
+<script src="app.js"></script>
+</body>
+</html>
