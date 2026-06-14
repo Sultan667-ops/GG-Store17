@@ -6,7 +6,7 @@ const CATS=[
   {id:'aksesoris',n:'Aksesori',em:'🏅',c:8},
   {id:'sepakbola',n:'Sepak Bola',em:'⚽',c:7},
   {id:'bulu',n:'Bulu Tangkis',em:'🏸',c:1},
-  {id:'p3k',n:'P3K',em:'🩺',c:1},
+
   {id:'produk',n:'Semua Produk',em:'📦',c:74},
 ];
 const PRODS=[
@@ -25,8 +25,7 @@ const PRODS=[
   {id:13,name:'[Paket Hemat] Rigid Tape 3.8Cm + Foamwrap - Biru',cat:'tinju',price:45430,old:64900,badge:'BEST SELLER',disc:'-30%',stars:1.0,sold:2,cic:true,tags:['Paket','Hemat'],desc:['1 Rigid Tape 3.8Cm x 13.7M','1 Foamwrap 7Cm x 27M','Hemat lebih banyak']},
   {id:14,name:'[Paket Hemat] Rigid Tape 3.8Cm + Foamwrap - Hitam',cat:'tinju',price:61655,old:64900,badge:'',disc:'-5%',stars:3.0,sold:1,cic:true,tags:['Paket','Hitam'],desc:['1 Rigid Tape 3.8Cm x 13.7M','1 Foamwrap 7Cm x 27M','Hemat lebih banyak']},
   {id:15,name:'[Paket Hemat] Rigid Tape 5Cm + Foamwrap - Putih',cat:'tinju',price:71155,old:74900,badge:'',disc:'-5%',stars:5.0,sold:50,cic:true,tags:['Paket','5cm'],desc:['4 Rigid Tape 5Cm x 13.7M','1 Foamwrap 7Cm x 27M','Nilai terbaik']},
-  {id:16,name:'Penyangga Payudara / Boobs Tape / Bra Tape 5Cm x 5M',cat:'pakaian',price:34900,old:null,badge:'BEST SELLER',disc:'',stars:5.0,sold:22,cic:true,tags:['Bra Tape','Boobs'],desc:['Bahan elastis lembut','Aman di kulit','5Cm x 5M','Tidak meninggalkan bekas']},
-  {id:17,name:'Ice Bag Hot & Cold / Kantong Kompres',cat:'p3k',price:32900,old:null,badge:'',disc:'',stars:5.0,sold:15,cic:true,tags:['Ice Bag','Kompres'],desc:['Bahan kuat','Tidak tembus air','Panas & dingin','High quality']},
+  
   {id:18,name:'Gunting Kinesiotape / Tape Scissor',cat:'aksesoris',price:27920,old:34900,badge:'',disc:'-20%',stars:5.0,sold:93,cic:true,tags:['Gunting','Aksesori'],desc:['Thick blade','Mudah potong tape','Deep serration','High quality']},
   {id:19,name:'Grip Busa Raket Badminton / Cushion Grip Wrap',cat:'bulu',price:32900,old:null,badge:'',disc:'',stars:4.9,sold:12,cic:true,tags:['Grip','Raket'],desc:['High quality','Anti slip','Nyaman di tangan','Berbagai warna']},
   {id:20,name:'Sportstape 5Cm x 13.7M - Hitam (Rigid)',cat:'sepakbola',price:42185,old:64900,badge:'BEST SELLER',disc:'-35%',stars:4.9,sold:120,cic:true,tags:['Sport','5cm','Hitam'],desc:['Bahan kaku/rigid','Daya rekat kuat','Anti air','Cocok sepak bola']},
