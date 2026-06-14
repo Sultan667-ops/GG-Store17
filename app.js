@@ -7,7 +7,6 @@ const CATS=[
   {id:'sepakbola',n:'Sepak Bola',em:'⚽',c:7},
   {id:'bulu',n:'Bulu Tangkis',em:'🏸',c:1},
   {id:'p3k',n:'P3K',em:'🩺',c:1},
-  {id:'pakaian',n:'Pakaian Dalam',em:'👙',c:1},
   {id:'produk',n:'Semua Produk',em:'📦',c:74},
 ];
 const PRODS=[
