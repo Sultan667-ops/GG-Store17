@@ -10,7 +10,19 @@ const catOf = id => CATEGORIES.find(c => c.id === id);
 const byId = id => PRODUCTS.find(p => p.id === id);
 const icon = (id, cls = '') => `<svg${cls ? ` class="${cls}"` : ''}><use href="#${id}"/></svg>`;
 
-function waLink(msg) { return `https://wa.me/${STORE.whatsapp}?text=${encodeURIComponent(msg)}`; }
+// Promo links carry ?src=tiktok etc.; remember it for the visit so WA chats show the channel.
+const SOURCE = (() => {
+  const fromUrl = (new URLSearchParams(location.search).get('src') || '').replace(/[^\w-]/g, '').slice(0, 30);
+  try {
+    if (fromUrl) sessionStorage.setItem('ggsport17-src', fromUrl);
+    return fromUrl || sessionStorage.getItem('ggsport17-src') || '';
+  } catch { return fromUrl; }
+})();
+
+function waLink(msg) {
+  if (SOURCE) msg += `\n\n(via ${SOURCE})`;
+  return `https://wa.me/${STORE.whatsapp}?text=${encodeURIComponent(msg)}`;
+}
 function openWA(msg) { window.open(waLink(msg), '_blank', 'noopener'); }
 
 let toastT;

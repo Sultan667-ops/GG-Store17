@@ -28,5 +28,24 @@ Selama `price` masih `null`, produk tampil "Tanya Harga" dan tombolnya ngarah ke
 ## Setelah update
 Di `index.html`, naikkan angka `?v=` di link `style.css`, `products.js` dan `app.js` (misal `?v=2` → `?v=3`). Dengan begitu browser pengunjung langsung ambil versi baru, nggak pakai salinan lama.
 
+## Link promosi per channel
+Pakai link yang beda di tiap tempat promosi. Kalau pembeli chat lewat web, di akhir pesan WA bakal muncul `(via tiktok)` dan sejenisnya, jadi lu tahu channel mana yang paling menghasilkan.
+
+| Dipasang di | Link |
+|---|---|
+| Bio TikTok | `https://sultan667-ops.github.io/GG-Store17/?src=tiktok` |
+| Bio Instagram | `https://sultan667-ops.github.io/GG-Store17/?src=instagram` |
+| Grup Facebook | `https://sultan667-ops.github.io/GG-Store17/?src=fbgrup` |
+| FB Marketplace | `https://sultan667-ops.github.io/GG-Store17/?src=marketplace` |
+| Status / broadcast WA | `https://sultan667-ops.github.io/GG-Store17/?src=wa` |
+| QR di kartu / stiker | `https://sultan667-ops.github.io/GG-Store17/?src=qr` |
+
+Nama setelah `src=` bebas, misalnya `?src=klubfutsal-bekasi`.
+
+## Biar muncul di Google
+1. Buka https://search.google.com/search-console, pilih **URL prefix**, isi `https://sultan667-ops.github.io/GG-Store17/`.
+2. Pilih verifikasi **HTML tag**, copy tag `<meta name="google-site-verification" ...>`, kirim ke Claude (atau tempel sendiri di `<head>` `index.html`), lalu push.
+3. Setelah terverifikasi, menu **Sitemaps** → isi `sitemap.xml`.
+
 ## Link produk
 Tiap produk punya link sendiri buat di-share, contoh: `index.html#p/kinematic-solid`.
