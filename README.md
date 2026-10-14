@@ -26,26 +26,30 @@ Selama `price` masih `null`, produk tampil "Tanya Harga" dan tombolnya ngarah ke
 2. Di `products.js`, copy satu blok produk, lalu ganti `id` (angka unik), `slug` (= nama folder), `cat`, `photos` (jumlah foto), `name`, `desc`.
 
 ## Setelah update
-Di `index.html`, naikkan angka `?v=` di link `style.css`, `products.js` dan `app.js` (misal `?v=2` → `?v=3`). Dengan begitu browser pengunjung langsung ambil versi baru, nggak pakai salinan lama.
+Di `index.html`, naikkan angka `?v=` di link `style.css`, `products.js` dan `app.js` (misal `?v=4` → `?v=5`). Dengan begitu browser pengunjung langsung ambil versi baru, nggak pakai salinan lama.
 
 ## Link promosi per channel
 Pakai link yang beda di tiap tempat promosi. Kalau pembeli chat lewat web, di akhir pesan WA bakal muncul `(via tiktok)` dan sejenisnya, jadi lu tahu channel mana yang paling menghasilkan.
 
 | Dipasang di | Link |
 |---|---|
-| Bio TikTok | `https://sultan667-ops.github.io/GG-Store17/?src=tiktok` |
-| Bio Instagram | `https://sultan667-ops.github.io/GG-Store17/?src=instagram` |
-| Grup Facebook | `https://sultan667-ops.github.io/GG-Store17/?src=fbgrup` |
-| FB Marketplace | `https://sultan667-ops.github.io/GG-Store17/?src=marketplace` |
-| Status / broadcast WA | `https://sultan667-ops.github.io/GG-Store17/?src=wa` |
-| QR di kartu / stiker | `https://sultan667-ops.github.io/GG-Store17/?src=qr` |
+| Bio TikTok | `https://ggsport17.netlify.app/?src=tiktok` |
+| Bio Instagram | `https://ggsport17.netlify.app/?src=instagram` |
+| Grup Facebook | `https://ggsport17.netlify.app/?src=fbgrup` |
+| FB Marketplace | `https://ggsport17.netlify.app/?src=marketplace` |
+| Status / broadcast WA | `https://ggsport17.netlify.app/?src=wa` |
+| QR di kartu / stiker | `https://ggsport17.netlify.app/?src=qr` |
 
 Nama setelah `src=` bebas, misalnya `?src=klubfutsal-bekasi`.
 
 ## Biar muncul di Google
-1. Buka https://search.google.com/search-console, pilih **URL prefix**, isi `https://sultan667-ops.github.io/GG-Store17/`.
+1. Buka https://search.google.com/search-console, pilih **URL prefix**, isi `https://ggsport17.netlify.app/`.
 2. Pilih verifikasi **HTML tag**, copy tag `<meta name="google-site-verification" ...>`, kirim ke Claude (atau tempel sendiri di `<head>` `index.html`), lalu push.
 3. Setelah terverifikasi, menu **Sitemaps** → isi `sitemap.xml`.
 
 ## Link produk
-Tiap produk punya link sendiri buat di-share, contoh: `index.html#p/kinematic-solid`.
+Tiap produk punya link sendiri buat di-share, contoh: `https://ggsport17.netlify.app/#p/kinematic-solid`.
+
+## Hosting
+Web tayang di **https://ggsport17.netlify.app/** (Netlify, otomatis update tiap push ke `main`).
+Alamat lama `sultan667-ops.github.io/GG-Store17/` otomatis dialihkan ke alamat Netlify.
