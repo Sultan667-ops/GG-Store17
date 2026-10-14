@@ -25,5 +25,8 @@ Selama `price` masih `null`, produk tampil "Tanya Harga" dan tombolnya ngarah ke
 1. Bikin folder `images/nama-produk/`, isi foto `01.jpg`, `02.jpg`, … (kotak/persegi, sekitar 1000×1000 px).
 2. Di `products.js`, copy satu blok produk, lalu ganti `id` (angka unik), `slug` (= nama folder), `cat`, `photos` (jumlah foto), `name`, `desc`.
 
+## Setelah update
+Di `index.html`, naikkan angka `?v=` di link `style.css`, `products.js` dan `app.js` (misal `?v=2` → `?v=3`). Dengan begitu browser pengunjung langsung ambil versi baru, nggak pakai salinan lama.
+
 ## Link produk
 Tiap produk punya link sendiri buat di-share, contoh: `index.html#p/kinematic-solid`.
