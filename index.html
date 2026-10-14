@@ -3,149 +3,174 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>GG Sport17 - Sport Health Support</title>
-<meta name="description" content="Toko perlengkapan kesehatan olahraga terpercaya. Kinesiology tape, rigid tape, wristape & aksesori sport premium.">
+<title>GG Sport17 – Perlengkapan Taping & Sport Health</title>
+<meta name="description" content="GG Sport17: kinesiology tape, sport tape rigid, finger tape, foamwrap, kaos kaki anti slip & perlengkapan recovery olahraga. Original, kirim ke seluruh Indonesia.">
+<meta name="theme-color" content="#E8602C">
+<meta property="og:title" content="GG Sport17 – The Best Choice">
+<meta property="og:description" content="Perlengkapan taping & sport health original. Pesan langsung via WhatsApp.">
+<meta property="og:image" content="images/kinematic-solid/01.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-  <div class="logo" onclick="goHome()">
-    <div class="logo-hex">
-      <svg viewBox="0 0 40 40"><polygon points="20,2 36,11 36,29 20,38 4,29 4,11" fill="#6B0000" stroke="#c00" stroke-width="1.5"/><polygon points="20,9 31,15 31,25 20,31 9,25 9,15" fill="#8B0000"/><text x="20" y="24" text-anchor="middle" fill="white" font-size="11" font-weight="900" font-family="Arial">GG</text></svg>
-    </div>
-    <span class="logo-name">GG_<span>Sport17</span></span>
-  </div>
-  <div class="nav-links">
-    <a onclick="goHome()">Beranda</a>
-    <a onclick="showCatalog()">Produk</a>
-    <a onclick="scrollFeat()">Tentang</a>
-  </div>
-  <div class="nav-r">
-    <div class="srch">
-      <span style="font-size:13px;color:rgba(255,255,255,.5)">🔍</span>
-      <input id="nav-srch" placeholder="Cari produk..." oninput="doSearch(this.value)" onfocus="showCatalog()">
-    </div>
-    <button class="cart-btn" onclick="showPage('page-cart')">🛒 <span class="cbadge" id="cc">0</span></button>
-  </div>
-</nav>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-cart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h9.2a1 1 0 0 0 1-.8L20 8H6.2M9 20.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm9 0a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm9 2-4-4"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="m9 6 6 6-6 6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M10 11v6m4-6v6M6 7l1 13h10l1-13M9 7V4h6v3"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 6h11v10H3zM14 10h4l3 3v3h-7M7.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm10 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3 5 6v5c0 4.5 3 8.3 7 10 4-1.7 7-5.5 7-10V6l-7-3Zm-3 9 2 2 4-4"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4A8 8 0 1 1 20 12ZM8.5 12h.01M12 12h.01M15.5 12h.01"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 8 12 3 3 8v8l9 5 9-5V8ZM3 8l9 5 9-5M12 13v8"/></symbol>
+  <symbol id="logo" viewBox="0 0 40 44"><polygon points="20,1 38.5,11.5 38.5,32.5 20,43 1.5,32.5 1.5,11.5" fill="#D7261E"/><polygon points="20,5 35,13.6 35,30.4 20,39 5,30.4 5,13.6" fill="none" stroke="#fff" stroke-width="1.6"/><text x="20" y="25" text-anchor="middle" fill="#fff" font-size="14" font-weight="900" font-family="Archivo,Arial">GG</text><text x="20" y="32.5" text-anchor="middle" fill="#fff" font-size="5.6" font-weight="800" letter-spacing=".6" font-family="Archivo,Arial">SPORT</text></symbol>
+</svg>
 
-<!-- HOME -->
-<div id="page-home" class="page on">
+<header class="hdr" id="top">
+  <div class="wrap hdr-in">
+    <a class="brand" href="#top" aria-label="GG Sport17 beranda">
+      <svg class="brand-mark"><use href="#logo"/></svg>
+      <span class="brand-txt"><b>GG</b>&nbsp;Sport17<small>The Best Choice</small></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#kategori">Kategori</a>
+      <a href="#produk">Produk</a>
+      <a href="#kenapa">Kenapa Kami</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+    <div class="hdr-act">
+      <button class="icon-btn" id="search-toggle" aria-label="Cari produk"><svg><use href="#i-search"/></svg></button>
+      <button class="icon-btn cart-btn" id="cart-open" aria-label="Keranjang"><svg><use href="#i-cart"/></svg><span class="cart-count" id="cart-count" hidden>0</span></button>
+      <button class="icon-btn menu-btn" id="menu-toggle" aria-label="Menu"><svg><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
   <section class="hero">
-    <div class="hero-l">
-      <div class="h-badge">🏆 SPORT HEALTH SUPPORT</div>
-      <h1>Perlengkapan <em>Taping Sport</em><br>Terbaik & Terpercaya</h1>
-      <p>Kinesiology tape, rigid tape, wristape, foamwrap & aksesori sport premium. Dukung performa & recovery lebih cepat!</p>
-      <div class="hbtns">
-        <button class="bp" onclick="showCatalog()">Belanja Sekarang</button>
-        <button class="bs" onclick="openWA('Halo GG Sport17! Saya ingin tanya info produk')">Chat WhatsApp</button>
-      </div>
-      <div class="hstats">
-        <div class="hst"><div class="n">1200+</div><div class="l">Terjual</div></div>
-        <div class="hst"><div class="n">4.9★</div><div class="l">Rating</div></div>
-        <div class="hst"><div class="n">201</div><div class="l">Pengikut</div></div>
-        <div class="hst"><div class="n">100%</div><div class="l">Original</div></div>
-      </div>
-    </div>
-    <div class="hero-r">
-      <div class="hero-logo">
-        <svg viewBox="0 0 160 160"><polygon points="80,8 148,46 148,114 80,152 12,114 12,46" fill="#6B0000" stroke="#c00" stroke-width="3"/><polygon points="80,18 138,52 138,108 80,142 22,108 22,52" fill="#8B0000"/><text x="80" y="78" text-anchor="middle" fill="white" font-size="38" font-weight="900" font-family="Arial">GG</text><text x="80" y="108" text-anchor="middle" fill="#ff6b35" font-size="13" font-weight="700" font-family="Arial">SPORT</text></svg>
-      </div>
-    </div>
-  </section>
-  <section class="sec">
-    <div class="sec-hd"><h2 class="sec-title">Kategori <em>Produk</em></h2><button class="see-all" onclick="showCatalog()">Lihat Semua →</button></div>
-    <div class="cat-grid" id="cat-home"></div>
-  </section>
-  <section class="sec sec-bg">
-    <div class="sec-hd"><h2 class="sec-title">Produk <em>Terlaris</em></h2><button class="see-all" onclick="showCatalog()">Lihat Semua →</button></div>
-    <div class="pg" id="grid-home"></div>
-  </section>
-  <div class="banner-w">
-    <div class="promo">
-      <div><h2>🔥 Cicilan 0% untuk semua produk!</h2><p>Bayar mulai Rp7.900 · Pengiriman seluruh Indonesia · 100% Original</p></div>
-      <button class="promo-btn" onclick="openWA('Halo, saya mau tanya promo cicilan 0%')">Tanya Sekarang</button>
-    </div>
-  </div>
-  <section class="sec" id="feat-sec">
-    <div class="sec-hd"><h2 class="sec-title">Mengapa <em>GG Sport17?</em></h2></div>
-    <div class="feat-grid">
-      <div class="fc"><div class="fic">🏅</div><div class="ft">100% Original</div><div class="fd">Semua produk original & bergaransi</div></div>
-      <div class="fc"><div class="fic">🚚</div><div class="ft">Pengiriman Cepat</div><div class="fd">Kirim ke seluruh Indonesia</div></div>
-      <div class="fc"><div class="fic">💳</div><div class="ft">Cicilan 0%</div><div class="fd">Cicil tanpa bunga berbagai metode</div></div>
-      <div class="fc"><div class="fic">⭐</div><div class="ft">Rating 4.9</div><div class="fd">Dipercaya ribuan pelanggan</div></div>
-    </div>
-  </section>
-  <footer>
-    <div class="fg">
-      <div class="fb"><span class="logo-name" style="font-size:16px">GG_<span>Sport17</span></span><p>Toko sport health support terpercaya. Kinesiology tape, rigid tape & aksesori olahraga premium.</p></div>
-      <div><div class="fh">Produk</div><ul class="fl"><li><a>Kinesiology Tape</a></li><li><a>Rigid Tape</a></li><li><a>Wristape</a></li><li><a>Foamwrap</a></li><li><a>Paket Hemat</a></li></ul></div>
-      <div><div class="fh">Kategori</div><ul class="fl"><li><a>Tinju & Bela Diri</a></li><li><a>Sepak Bola</a></li><li><a>Bulu Tangkis</a></li><li><a>P3K</a></li></ul></div>
-      <div><div class="fh">Kontak</div><ul class="fl"><li><a>WhatsApp: +62 859-2145-6628</a></li><li><a>Shopee: Gg-Sport17</a></li></ul></div>
-    </div>
-    <div class="fbot"><span>© 2026 GG_Sport17. All rights reserved.</span><span>Sport Health Support 💪</span></div>
-  </footer>
-</div>
-
-<!-- CATALOG -->
-<div id="page-catalog" class="page">
-  <div class="cat-filter-bar">
-    <div class="srch-bar-full"><span style="font-size:15px;color:#aaa">🔍</span><input id="cat-srch" placeholder="Cari produk GG Sport17..." oninput="doSearch(this.value)"></div>
-    <div class="filt-pills" id="filt-pills"></div>
-  </div>
-  <div class="cat-content">
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px"><span style="font-size:12px;color:#888" id="prod-count"></span></div>
-    <div class="pg" id="grid-catalog"></div>
-    <div class="no-res" id="no-res" style="display:none"><div style="font-size:36px;margin-bottom:10px">😕</div><div style="font-size:14px;font-weight:700">Produk tidak ditemukan</div></div>
-  </div>
-</div>
-
-<!-- DETAIL -->
-<div id="page-detail" class="page">
-  <div class="det-back" onclick="showPage('page-catalog')">← Kembali ke Produk</div>
-  <div class="det-body" id="det-body"></div>
-  <div class="reviews-sec" id="reviews-sec"></div>
-</div>
-
-<!-- CART -->
-<div id="page-cart" class="page">
-  <div class="cart-hd">🛒 Keranjang & Checkout <span id="cart-hd-c" style="color:var(--or);font-size:13px"></span></div>
-  <div class="cart-lay">
-    <div><div class="cart-sec"><h3>Produk Dipesan</h3><div id="cart-list"></div></div></div>
-    <div>
-      <div class="ord-sum">
-        <h3>Ringkasan Pesanan</h3>
-        <div class="sum-r"><span>Subtotal</span><span id="s-sub">Rp 0</span></div>
-        <div class="sum-r"><span>Ongkir</span><span style="color:green;font-weight:700">Gratis</span></div>
-        <div class="sum-r tot"><span>Total</span><span id="s-tot">Rp 0</span></div>
-      </div>
-      <div class="form-sec">
-        <h3>📦 Data Pengiriman</h3>
-        <div class="fg2"><label>Nama Lengkap</label><input id="f-name" placeholder="Nama penerima"></div>
-        <div class="fg2"><label>Nomor WhatsApp</label><input id="f-phone" placeholder="08xxxxxxxxxx"></div>
-        <div class="fg2"><label>Alamat Lengkap</label><textarea id="f-addr" placeholder="Jalan, RT/RW, Kelurahan..."></textarea></div>
-        <div class="fg2"><label>Kota / Kabupaten</label><input id="f-city" placeholder="Jakarta, Surabaya..."></div>
-      </div>
-      <div class="form-sec" style="margin-top:12px">
-        <h3>💳 Metode Pembayaran</h3>
-        <div class="pay-g" id="pay-g">
-          <div class="po on" onclick="selPay(this,'Transfer Bank')"><div>🏦</div><span>Transfer Bank</span></div>
-          <div class="po" onclick="selPay(this,'QRIS')"><div>📲</div><span>QRIS</span></div>
-          <div class="po" onclick="selPay(this,'COD')"><div>🚪</div><span>COD</span></div>
-          <div class="po" onclick="selPay(this,'Cicilan 0%')"><div>💳</div><span>Cicilan 0%</span></div>
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <span class="eyebrow">Sport Health Support</span>
+        <h1>Taping yang kuat,<br>main tanpa <span class="hl">ragu.</span></h1>
+        <p class="lead">Kinesiology tape, sport tape rigid, finger tape, foamwrap sampai perlengkapan recovery. Produk original, dikirim ke seluruh Indonesia.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#produk">Lihat Produk</a>
+          <button class="btn btn-ghost" data-wa="Halo GG Sport17! Saya mau tanya-tanya produk."><svg><use href="#i-wa"/></svg>Chat WhatsApp</button>
         </div>
-        <button class="co-btn" onclick="doCheckout()">✅ Konfirmasi Pesanan</button>
-        <button class="wa-co" onclick="doWACO()">💬 Checkout via WhatsApp</button>
+        <dl class="stats" id="stats"></dl>
+      </div>
+      <div class="hero-visual" id="hero-visual" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="kategori">
+    <div class="wrap">
+      <div class="sec-hd">
+        <h2>Belanja per kategori</h2>
+        <p>Pilih sesuai kebutuhanmu, dari taping sampai recovery.</p>
+      </div>
+      <div class="cat-grid" id="cat-grid"></div>
+    </div>
+  </section>
+
+  <section class="sec sec-alt" id="produk">
+    <div class="wrap">
+      <div class="sec-hd sec-hd-row">
+        <div>
+          <h2>Semua produk</h2>
+          <p id="prod-count"></p>
+        </div>
+        <label class="search" id="search-box">
+          <svg><use href="#i-search"/></svg>
+          <input id="search" type="search" placeholder="Cari tape, foamwrap, kaos kaki…" autocomplete="off">
+        </label>
+      </div>
+      <div class="pills" id="pills" role="tablist"></div>
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty" hidden>
+        <svg><use href="#i-search"/></svg>
+        <p><b>Produk tidak ditemukan.</b><br>Coba kata lain, atau tanya langsung ke kami.</p>
+        <button class="btn btn-ghost" data-wa="Halo GG Sport17! Saya cari produk yang tidak ada di web, bisa dibantu?">Tanya via WhatsApp</button>
       </div>
     </div>
+  </section>
+
+  <section class="sec" id="kenapa">
+    <div class="wrap">
+      <div class="sec-hd"><h2>Kenapa belanja di GG Sport17?</h2></div>
+      <div class="why">
+        <div class="why-i"><svg><use href="#i-shield"/></svg><h3>100% Original</h3><p>Merek asli seperti Kinematics Tex, Mueller & Salonpas.</p></div>
+        <div class="why-i"><svg><use href="#i-truck"/></svg><h3>Kirim se-Indonesia</h3><p>Pesanan dikemas rapi dan dikirim ke seluruh kota.</p></div>
+        <div class="why-i"><svg><use href="#i-chat"/></svg><h3>Fast Response</h3><p>Tanya ukuran, warna, atau cara pakai langsung via WhatsApp.</p></div>
+        <div class="why-i"><svg><use href="#i-box"/></svg><h3>Paket Hemat</h3><p>Bundling tape + foamwrap, lebih murah dari beli satuan.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="cta-band">
+      <div>
+        <h2>Bingung pilih tape yang cocok?</h2>
+        <p>Ceritain olahraga & bagian yang mau di-taping, kami bantu rekomendasikan.</p>
+      </div>
+      <button class="btn btn-light" data-wa="Halo GG Sport17! Saya mau konsultasi pilih tape yang cocok."><svg><use href="#i-wa"/></svg>Konsultasi Gratis</button>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr" id="kontak">
+  <div class="wrap ftr-in">
+    <div class="ftr-brand">
+      <a class="brand" href="#top"><svg class="brand-mark"><use href="#logo"/></svg><span class="brand-txt"><b>GG</b>&nbsp;Sport17<small>The Best Choice</small></span></a>
+      <p>Toko perlengkapan taping & sport health support. Produk original untuk atlet dan pecinta olahraga.</p>
+    </div>
+    <div>
+      <h4>Kategori</h4>
+      <ul id="ftr-cats"></ul>
+    </div>
+    <div>
+      <h4>Hubungi kami</h4>
+      <ul>
+        <li><a href="#" data-wa="Halo GG Sport17!" id="ftr-wa">WhatsApp</a></li>
+        <li><a href="#" id="ftr-shopee" target="_blank" rel="noopener">Shopee: Gg-Sport17</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap ftr-bot"><span>© <span id="year"></span> GG Sport17. All rights reserved.</span></div>
+</footer>
+
+<!-- Product detail -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="pd-name" hidden>
+  <div class="modal-bg" data-close></div>
+  <div class="modal-box">
+    <button class="icon-btn modal-x" data-close aria-label="Tutup"><svg><use href="#i-close"/></svg></button>
+    <div class="pd" id="pd"></div>
   </div>
 </div>
 
-<div class="toast" id="toast"></div>
-<div class="suc-modal" id="suc-modal"><div class="suc-box"><div class="suc-icon">🎉</div><h2>Pesanan Berhasil!</h2><p id="suc-msg"></p><button onclick="closeSuc()">Lanjut Belanja</button></div></div>
-<button class="wa-float" onclick="openWA('Halo GG Sport17! Saya mau tanya produk 👋')">💬</button>
+<!-- Cart drawer -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-bg" data-close-cart></div>
+  <aside class="drawer-box" role="dialog" aria-modal="true" aria-label="Keranjang">
+    <div class="drawer-hd">
+      <h3>Keranjang</h3>
+      <button class="icon-btn" data-close-cart aria-label="Tutup"><svg><use href="#i-close"/></svg></button>
+    </div>
+    <div class="drawer-body" id="cart-body"></div>
+    <div class="drawer-ft" id="cart-ft"></div>
+  </aside>
+</div>
 
+<a class="wa-float" href="#" data-wa="Halo GG Sport17! Saya mau tanya produk." aria-label="Chat WhatsApp"><svg><use href="#i-wa"/></svg></a>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="products.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
