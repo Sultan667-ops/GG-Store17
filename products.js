@@ -40,19 +40,19 @@ const PRODUCTS = [
   {
     id: 1, slug: 'kinematic-solid', cat: 'kinesio', photos: 9,
     name: 'Kinematic Tex Strong Plus 5 Cm x 5 M – Solid',
-    price: null, oldPrice: null, badge: 'Best Seller',
+    price: 15000, oldPrice: null, badge: 'Best Seller',
     desc: ['Kinesiology tape original Kinematics Tex Strong Plus', 'Bahan elastis, daya rekat kuat', 'Tersedia banyak pilihan warna polos', 'Ukuran 5 Cm x 5 M'],
   },
   {
     id: 2, slug: 'kinematic-tattoo', cat: 'kinesio', photos: 7,
     name: 'Kinematic Tex Strong Plus 5 Cm x 5 M – Tattoo',
-    price: null, oldPrice: null, badge: '',
+    price: 15000, oldPrice: null, badge: '',
     desc: ['Kinesiology tape original Kinematics Tex Strong Plus', 'Motif tattoo yang stylish', 'Bahan elastis, daya rekat kuat', 'Ukuran 5 Cm x 5 M'],
   },
   {
     id: 3, slug: 'kindmax', cat: 'kinesio', photos: 11,
     name: 'Kindmax Sports Tape 5 Cm x 5 M',
-    price: null, oldPrice: null, badge: '',
+    price: 15000, oldPrice: null, badge: '',
     desc: ['Kinesiology tape Kindmax', 'Waterproof & extra strong', 'Tersedia berbagai warna', 'Ukuran 5 Cm x 5 M'],
   },
   {
@@ -76,13 +76,13 @@ const PRODUCTS = [
   {
     id: 7, slug: 'fingertape-solid', cat: 'finger', photos: 18,
     name: 'Finger Tape Solid 4,5 Cm x 5 M',
-    price: null, oldPrice: null, badge: 'Best Seller',
+    price: 10000, oldPrice: null, badge: 'Best Seller',
     desc: ['Perban kohesif, menempel ke bahannya sendiri (tanpa lem)', 'Elastis & mudah disobek', 'Banyak pilihan warna polos', 'Ukuran 4,5 Cm x 5 M'],
   },
   {
     id: 8, slug: 'fingertape-camo', cat: 'finger', photos: 12,
     name: 'Finger Tape Camo 4,5 Cm x 5 M',
-    price: null, oldPrice: null, badge: '',
+    price: 10000, oldPrice: null, badge: '',
     desc: ['Perban kohesif motif camouflage', 'Menempel ke bahannya sendiri (tanpa lem)', 'Elastis & mudah disobek', 'Ukuran 4,5 Cm x 5 M'],
   },
   {

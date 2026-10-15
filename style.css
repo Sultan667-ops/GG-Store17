@@ -6,8 +6,8 @@
   --ink:#17130F;
   --ink-2:#4A433C;
   --muted:#80776E;
-  --line:#E9E2D9;
-  --bg:#FAF7F2;
+  --line:#D9C5AC;
+  --bg:#EADBC8;
   --card:#FFFFFF;
   --wa:#1FA855;
   --r:14px;
@@ -46,7 +46,7 @@ h1,h2,h3,h4{font-family:var(--f-head);line-height:1.12;letter-spacing:-.01em}
 .icon-btn:hover{background:rgba(23,19,15,.06)}
 
 /* Header */
-.hdr{position:sticky;top:0;z-index:40;background:rgba(250,247,242,.88);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
+.hdr{position:sticky;top:0;z-index:40;background:rgba(234,219,200,.9);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
 .hdr-in{display:flex;align-items:center;gap:24px;height:68px}
 .brand{display:flex;align-items:center;gap:10px}
 .brand-mark{width:36px;height:40px}
@@ -85,7 +85,7 @@ h1,h2,h3,h4{font-family:var(--f-head);line-height:1.12;letter-spacing:-.01em}
 
 /* Sections */
 .sec{padding:72px 0}
-.sec-alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sec-alt{background:#F3E9DC;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .sec-hd{margin-bottom:28px}
 .sec-hd h2{font-size:clamp(26px,3.4vw,36px);font-weight:900}
 .sec-hd p{color:var(--muted);margin-top:6px}
